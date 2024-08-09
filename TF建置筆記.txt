@@ -1,0 +1,36 @@
+(base) C:\Users\user>python -V
+Python 3.9.13
+版本	Python 版本	編譯器	建構工具	cuDNN	CUDA
+tensorflow_gpu-2.6.0	3.6-3.9	MSVC 2019	Bazel 3.7.2	8.1	11.2
+
+(base) C:\Users\user>conda env list
+# conda environments:
+#
+base                  *  C:\Users\user\anaconda3
+tf-gpu2.6.0_py3.9        C:\Users\user\anaconda3\envs\tf-gpu2.6.0_py3.9
+
+版本	Python 版本	編譯器		建構工具	cuDNN		CUDA
+???	3.9		?????		?????		8.9.4.25	11.8
+
+進入tf-gpu2.0_py3.6環境則輸入:activate tf-gpu2.0_py3.6
+activate tf-gpu2.6.0_py3.9
+
+(tf-gpu2.6.0_py3.9) C:\Users\user>python -m pip install numpy==1.19.5
+Requirement already satisfied: numpy==1.19.5 in c:\users\user\anaconda3\envs\tf-gpu2.6.0_py3.9\lib\site-packages (1.19.5)
+
+conda install spyder
+
+python -m pip install protobuf==3.20.x
+離開則輸入:deactivate
+
+pip install keras==2.6
+
+現在的問題: 模型是在2.15.0上訓練的
+比2.6.0高很多
+
+##建了一個tf2.10的
+conda create --name tf-gpu2.10.0_py3.9 python=3.9
+
+activate tf-gpu2.10.0_py3.9
+
+pip install tensorflow-gpu==2.10.0
